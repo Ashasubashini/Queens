@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    @apply mb-0;
+}
+
+.header-height {
+    @apply h-[80px];
+}
+
+.logo-height {
+    @apply h-[50px];
+}
+
+#menu_icon,
+#close_icon {
+    @apply transition-opacity duration-[0.3s] ease-[ease-in-out];
+}
+
+#menu_items {
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+body {
+    @apply m-0 p-0;
+}
+
+#page-content {
+    @apply transition-opacity duration-[0.3s] ease-[ease-in-out];
+}
+
+#page-content.hidden {
+    @apply opacity-0;
+}
+
+.container-fluid,
+.row,
+.col {
+    @apply m-0 p-0;
+}
+
+.menu-link {
+    @apply block py-4 mb-4 text-3xl font-bold text-emerald-950 hover:text-white w-full text-center;
+}
